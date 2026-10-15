@@ -16,7 +16,7 @@ async function handleLogin(event){
         const response = await verifyLogin(formData);
         console.log("Login was a success! "+response);
     } catch (error){
-        console.log("### Error message: "+error.message+" ### dThere was an error");
+        console.log(error.message);
     }
 
 }
